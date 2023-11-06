@@ -1,0 +1,199 @@
+/*
+RESET
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+GENERAL
+*/
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.small-container{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-item {
+    width: calc((100% / 6) * 1);
+}
+
+.header-link {
+    width: calc((100% / 6) * 4);
+    text-align: center;
+}
+
+.header-login {
+    width: calc((100% / 6) * 1);
+}
+
+.my-col-3-5 {
+    width: calc((100% / 5) * 3);
+}
+
+.my-col-2-5 {
+    width: calc((100% / 5) * 2);
+}
+
+.my-col-2-6 {
+    width: calc((100% / 6) * 2);
+}
+
+.my-col-4-6 {
+    width: calc((100% / 6) * 4);
+}
+
+.my-col-1-4 {
+    width: calc((100% / 4) * 1);
+}
+
+/*
+  HEADER
+*/
+
+.header-first-container .items-container * {
+    height: 40px;
+}
+
+.header-second-container .small-container * {
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+   MAIN
+*/
+
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+
+
+.green-container {
+    width: 100%;
+    background-color: green;
+    border: 1px dashed black;
+    height: 600px;
+}
+
+/*
+  FOOTER
+*/
+.my-row-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top-footer {
+    padding-top: 10px;
+}
+
+hr {
+    margin: 30px;
+}
+
+.bottom-footer .sign-container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*
+DEBUG
+*/
+
+
+.debug .header-first-container {
+    background-color: skyblue;
+    height: 70px;
+    padding-top: 10px;
+}
+
+
+
+.debug .header-first-container .items-container * {
+    background-color: orange;
+    border: 1px dashed black;
+    padding: 10px 0;
+}
+
+
+
+.debug .header-second-container {
+    background-color: blue;
+    height: 500px;
+    padding: 50px 0;
+}
+
+
+
+.debug .header-second-container .pink-container {
+    background-color: lightcoral;
+    border: 1px dashed black;
+    min-height: 400px;
+}
+
+.debug main section .my-row .my-col-3-5 {
+    background-color: rgb(0, 166, 255);
+    border: 1px dashed black;
+    min-height: 400px;
+}
+
+.debug main section .my-row .my-col-2-5 {
+    background-color: rgb(255, 97, 239);
+    border: 1px dashed black;
+    min-height: 400px;
+}
+
+
+.debug .grey-back  {
+    background-color: lightgrey;
+}
+
+.debug footer {
+    background-color: rgb(46, 46, 46);
+}
+
+.debug .top-main-row .my-col-2-6 {
+    background-color: lightsalmon;
+    border: 1px dashed black;
+    min-height: 400px;
+}
+
+.debug .top-second-row {
+    border: 1px dashed black;
+}
+
+.debug .top-second-row .my-col-1-4 {
+    background-color: cadetblue;
+    border: 2px dashed white;
+    min-height: 400px;
+}
+
+.debug .sign-container {
+    background-color: aquamarine;
+}
+
+.debug .sign-container > * {
+    background-color: pink;
+    border: 1px dashed black;
+    padding: 10px;
+}
