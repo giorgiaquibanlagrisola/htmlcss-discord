@@ -62,18 +62,74 @@ html {
     width: calc((100% / 4) * 1);
 }
 
+.my-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #eee;
+    color: black;
+    text-decoration: none;
+}
+
+
+
 /*
   HEADER
 */
+.header-first-container {
+    background-color: #255EE9;
+}
 
-.header-first-container .items-container * {
-    height: 40px;
+.header-first-container .items-container > * {
+    padding: 5px;
+}
+
+.header-first-container .container > .items-container {
+    padding-bottom: 10px;
+}
+
+.header-first-container .items-container > .header-link ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.header-first-container .items-container > .header-link ul li a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.header-first-container .items-container > .header-login {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-first-container .items-container > .logo-container img {
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-login > .my-button {
+    font-size: 0.8em;
 }
 
 .header-second-container .small-container * {
     justify-content: center;
     align-items: center;
 }
+
+.header-second-container {
+    padding: 50px 0;
+    background-image: url('../img/jumbo.png');
+    background-size: cover;
+    background-position: center;
+}
+
 
 /*
    MAIN
@@ -122,25 +178,21 @@ DEBUG
 
 
 .debug .header-first-container {
-    background-color: skyblue;
     height: 70px;
     padding-top: 10px;
 }
 
 
 
-.debug .header-first-container .items-container * {
-    background-color: orange;
-    border: 1px dashed black;
-    padding: 10px 0;
+.debug .header-first-container .items-container > * {
+    padding: 5px;
 }
 
 
 
 .debug .header-second-container {
-    background-color: blue;
+    background-color: #255EE9;
     height: 500px;
-    padding: 50px 0;
 }
 
 
